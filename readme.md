@@ -1,3 +1,3 @@
-* Importante: Falta comentar el codigo
+* Importante: Falta comentar el código
 
-* El JS es mio solo a la mitad, mire como hacer la cuenta atras.
+* El JS es mío solo a la mitad, miré coamo hacer la cuenta atrás.
