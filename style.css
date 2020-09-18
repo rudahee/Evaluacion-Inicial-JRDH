@@ -1,0 +1,212 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+body {
+    background-image: url(img/seo.jpg);
+    background-repeat: repeat;
+    background-position-x: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(153, 153, 153, 0.603);
+    width: 90%;
+    height: 50px;
+    margin: -10px auto;
+    right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#temporizador {
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: large;
+    font-weight: bolder;
+    animation: arcoiris 2s alternate infinite, zoom 1s alternate infinite;
+
+}
+
+#contenedor-principal {
+    height: 91%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caja {
+    background-color: #342c72ab;
+    border: 1px black solid;
+    border-radius: 9px;
+    height: 400px;
+    width: 300px;
+}
+
+article {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-bottom: -25px;
+}
+
+li {
+    position: relative;
+    display: block;
+    padding: .4em 2em .4em 2em;
+    margin: .5em .5em;
+    background: rgb(170, 170, 170);
+    color: rgb(43, 42, 42);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 1s ease-out;
+}
+
+li:hover{
+    background: #fff;
+    cursor: default ;
+}
+
+ol li {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5)
+}
+
+p {
+    font-weight: bolder;
+    font-size: 4vh;
+}
+
+aside {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logo {
+    width: 70%;
+    height: 70%;
+    margin: -60px 5px;
+    clip-path: inset(50px 10px 50px 10px);
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    width: 250px;
+    border: none;
+    color: white;
+    border-bottom: 2px solid black;
+    background: transparent;
+    font-size: 16px;
+    text-align: center;
+}
+
+::placeholder {
+    color: white
+}
+
+input:focus {
+    border: none;
+    border-bottom: 3px solid black;
+    background: transparent;
+    outline: none;
+}
+
+#boton {
+    width: 120px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    cursor: pointer;
+}
+
+#boton:hover {
+    opacity: 0.9;
+}
+
+footer {
+    height: 25px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding-top: 6px;
+    background-color: rgba(104, 183, 233, 0.479);
+    text-align: center;
+}
+
+footer p {
+    margin: 0px 150px;
+    font-size: 4pt;
+}
+
+#letra-peque {
+    text-align: justify;
+}
+
+@keyframes zoom {
+    from { 
+        transform: scale(1,1); 
+    }
+    50% {
+        transform: scale(1.5,1.5);
+    }
+    to { 
+        transform: scale(1,1); 
+    }
+}
+@keyframes arcoiris {
+    0% {
+        color: rgb(255, 0, 0);
+    } 
+    16% {
+        color: rgb(255, 0, 255);
+    } 
+    33% {
+        color: rgb(0, 0, 255);
+    } 
+    50% {
+        color: rgb(0, 255, 255);
+    }
+    66% {
+        color: rgb(0, 255, 0);
+    }     
+    83% {
+        color: rgb(255, 255, 0);
+    } 
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
